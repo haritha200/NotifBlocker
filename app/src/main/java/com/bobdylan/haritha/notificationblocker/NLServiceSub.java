@@ -33,7 +33,7 @@ public class NLServiceSub extends NotificationListenerService {
 
         if(app.isChecked()) {
 
-               Intent intent = new Intent("com.bobdylan.haritha.notificationblocker");
+               
 
                 mDate = new Date();
                 app.addDate(String.format("%tR", mDate));
@@ -41,7 +41,7 @@ public class NLServiceSub extends NotificationListenerService {
                     app.setCount(app.getCount()+1) ;
                     cancelNotification(sbn.getKey());
                 }
-                sendBroadcast(intent);
+             
             }
         }
 
